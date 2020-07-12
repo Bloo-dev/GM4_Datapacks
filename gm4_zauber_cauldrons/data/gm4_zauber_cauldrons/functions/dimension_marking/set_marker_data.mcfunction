@@ -3,7 +3,7 @@
 # run from dimension/mark_dimension
 
 # scoreboard ID
-execute store result score #max gm4_dimension if entity @e[tag=gm4_dimension_marker]
+scoreboard players add #max gm4_dimension 1
 scoreboard players operation @s gm4_dimension = #max gm4_dimension
 
 # name
