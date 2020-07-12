@@ -3,6 +3,8 @@ forceloaded chunk:
 - gm4_zauber_cauldrons:player/multi_use_bottle/modify_bottle lines 21, 24, 25
 - gm4_zauber_cauldrons:init line 19
 
-dimension tag not present on entities anymore:
-- gm4_zauber_cauldrons:player/wormhole_targeting/set_position lines 11, 12, 13, 14
-- gm4_zauber_cauldrons:cauldron/extra_items/catch_possessed_items lines 16, 17
+- gm4_zauber_cauldrons:dimension_marking/mark_dimension line 5, 6, 9
+
+dimension tag not present on entities anymore (fixed by BPR):
+X gm4_zauber_cauldrons:player/wormhole_targeting/set_position lines 11, 12, 13, 14
+X gm4_zauber_cauldrons:cauldron/extra_items/catch_possessed_items lines 16, 17

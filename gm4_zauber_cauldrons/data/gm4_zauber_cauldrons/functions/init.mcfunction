@@ -17,6 +17,11 @@ function gm4_zauber_cauldrons:recipes/chorus/initiate_chorus_amounts
 scoreboard players set modulo gm4_zc_fullness 3
 
 # 1.16 Reminder Note : Setup yellow shulker box and forceloaded chunk
+execute in minecraft:overworld run forceload add 29999999 7134
+execute in minecraft:overworld run setblock 29999998 63 7135 minecraft:yellow_shulker_box
+execute in minecraft:overworld run setblock 29999998 64 7135 minecraft:birch_sign
+scoreboard objectives add gm4_dimension dummy
+execute as @a at @s run function gm4_zauber_cauldrons:dimension_marking/check_first_load
 
 execute unless score zauber_cauldrons gm4_modules matches 1 run data modify storage gm4:log queue append value {type:"install",module:"Zauber Cauldrons"}
 scoreboard players set zauber_cauldrons gm4_modules 1
