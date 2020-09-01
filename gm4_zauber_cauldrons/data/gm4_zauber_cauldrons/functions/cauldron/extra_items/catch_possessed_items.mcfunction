@@ -14,6 +14,6 @@ execute store result entity @e[type=item,dx=0,dy=0,dz=0,nbt={Item:{tag:{gm4_zaub
 execute store result entity @e[type=item,dx=0,dy=0,dz=0,nbt={Item:{tag:{gm4_zauber_cauldrons:{item:"bottled_vex"}}}},limit=1] Item.tag.gm4_zauber_cauldrons.cauldron_pos.z int 1 run data get entity @s Pos.[2]
 # store dimension in nbt
 # 1.16 Note: dimension checking fixed by BPR, custom dimensions are supported
-execute store result entity @e[type=item,dx=0,dy=0,dz=0,nbt={Item:{tag:{gm4_zauber_cauldrons:{item:"bottled_vex"}}}},limit=1] Item.tag.gm4_zauber_cauldrons.cauldron_pos.dimension int 1 run scoreboard players get @e[tag=gm4_dimension_marker,distance=0..,limit=1] gm4_dimension
+execute store result entity @e[type=item,dx=0,dy=0,dz=0,nbt={Item:{tag:{gm4_zauber_cauldrons:{item:"bottled_vex"}}}},limit=1] Item.tag.gm4_zauber_cauldrons.cauldron_pos.dimension int 1 run scoreboard players get @e[type=area_effect_cloud,tag=gm4_dimension_marker,distance=0..,limit=1] gm4_dimension
 
 scoreboard players set bottled_possessed_items gm4_zc_data 1
