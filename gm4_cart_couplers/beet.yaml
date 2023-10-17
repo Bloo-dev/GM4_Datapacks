@@ -1,0 +1,25 @@
+id: gm4_cart_couplers
+name: Cart Couplers
+version: 1.0.X
+
+data_pack:
+  load: .
+
+pipeline:
+  - gm4.plugins.extend.module
+
+meta:
+  gm4:
+    versioning:
+      schedule_loops: [main]
+    website:
+      description: TODO
+      recommended:
+        - gm4_vertical_rails
+        - gm4_tunnel_bores
+        - gm4_ziprails
+    video: null
+    wiki: https://wiki.gm4.co/wiki/Cart_Couplers
+    credits:
+      Creator:
+        - Bloo
