@@ -1,7 +1,7 @@
 # Decides which seed to use upon replanting
 # @s = player on a pig tractor
 # at planting location of seed
-# run from functions in gm4_pig_tractors:till/blocks/
+# run from functions in gm4_pig_tractors:harvest/block/ and gm4_pig_tractors:harvest/empty_farmland
 
 # fake player for if-else
 scoreboard players set $pulled_seeds gm4_pig_tractors 0
