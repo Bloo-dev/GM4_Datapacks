@@ -10,7 +10,7 @@ setblock ~ ~ ~ farmland[moisture=7] replace
 loot spawn ~ ~1 ~ loot gm4_pig_tractors:till/dirt
 
 # item magnet
-function gm4_pig_tractors:utility/item_magnet
+execute at @s as @e[type=item,distance=..3] run function gm4_pig_tractors:utility/item_magnet
 
 # sound
 playsound minecraft:item.hoe.till player @s ~ ~ ~ 0.8 1

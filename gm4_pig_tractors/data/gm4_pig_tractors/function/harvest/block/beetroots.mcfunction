@@ -7,7 +7,7 @@
 setblock ~ ~ ~ air destroy
 
 # item magnet
-function gm4_pig_tractors:utility/item_magnet
+execute at @s as @e[type=item,distance=..3] run function gm4_pig_tractors:utility/item_magnet
 
 # try to replant beetroot if the player isn't holding a seed
 scoreboard players set $planted_successfully gm4_pig_tractors 0
